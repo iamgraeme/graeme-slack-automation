@@ -88,10 +88,44 @@ Modify the `SCHEDULE` array in `status.js` to adjust times and durations.
 
 ## Usage
 
-1. Start the server:
+1. Running the Server
+
+### Development Mode
 ```bash
-node status.js
+# Run with hot-reload (recommended for development)
+npm run dev
 ```
+
+### Production Mode
+```bash
+# First build the TypeScript files
+npm run build
+
+# Then start the server
+npm start
+```
+
+### Available Scripts
+- `npm run dev` - Starts server in development mode with auto-reload
+- `npm run build` - Compiles TypeScript to JavaScript
+- `npm start` - Runs the compiled JavaScript (for production)
+- `npm run lint` - Checks for code style issues
+- `npm run lint:fix` - Automatically fixes code style issues
+
+### Checking Server Status
+When running, you should see:
+```bash
+Server running on port 3000
+Status automation running...
+Daily schedule configured
+```
+
+### Troubleshooting
+If you encounter any issues:
+1. Make sure your `.env` file is properly configured
+2. Verify your Slack token has the required permissions
+3. Check the console for any TypeScript compilation errors
+4. Ensure all dependencies are installed (`npm install`)
 
 2. Available endpoints:
 
