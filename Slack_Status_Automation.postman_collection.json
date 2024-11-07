@@ -1,0 +1,170 @@
+{
+  "info": {
+    "name": "Slack Status Automation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Coffee Breaks",
+      "item": [
+        {
+          "name": "Quick Coffee (5 mins)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/coffee/quick",
+              "host": ["{{base_url}}"],
+              "path": ["coffee", "quick"]
+            }
+          }
+        },
+        {
+          "name": "Regular Coffee (15 mins)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/coffee/regular",
+              "host": ["{{base_url}}"],
+              "path": ["coffee", "regular"]
+            }
+          }
+        },
+        {
+          "name": "Coffee Chat (30 mins)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/coffee/chat",
+              "host": ["{{base_url}}"],
+              "path": ["coffee", "chat"]
+            }
+          }
+        },
+        {
+          "name": "Custom Coffee Break",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"duration\": 20\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/coffee-break",
+              "host": ["{{base_url}}"],
+              "path": ["coffee-break"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Meetings",
+      "item": [
+        {
+          "name": "Start Meeting (Default 30 mins)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/meeting",
+              "host": ["{{base_url}}"],
+              "path": ["meeting"]
+            }
+          }
+        },
+        {
+          "name": "Custom Duration Meeting",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"duration\": 45\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/meeting",
+              "host": ["{{base_url}}"],
+              "path": ["meeting"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Focus Mode",
+      "item": [
+        {
+          "name": "Toggle Focus Mode",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/toggle-focus",
+              "host": ["{{base_url}}"],
+              "path": ["toggle-focus"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Status Management",
+      "item": [
+        {
+          "name": "Clear Status",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/clear-status",
+              "host": ["{{base_url}}"],
+              "path": ["clear-status"]
+            }
+          }
+        },
+        {
+          "name": "Set Custom Status",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"duration\": 30\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/set-status/MEETING",
+              "host": ["{{base_url}}"],
+              "path": ["set-status", "MEETING"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
+}
