@@ -50,8 +50,8 @@ These permissions are required because the app needs to:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd slack-status-automation
+git clone git@github.com:iamgraeme/graeme-slack-automation.git
+cd graeme-slack-automation
 ```
 
 2. Install dependencies:
