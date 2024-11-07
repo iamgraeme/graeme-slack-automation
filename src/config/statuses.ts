@@ -14,7 +14,7 @@ export const STATUSES: Record<string, SlackStatus> = {
     dnd: true,
     presence: 'away',
   },
-
+  // WORK PRESETS
   STANDUP_PREP: {
     status_text: 'Standup Prep',
     status_emoji: ':clipboard:',
