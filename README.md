@@ -208,3 +208,37 @@ MIT
 
 - Inspired by the need for better focus time management
 - Built for developers by developers
+
+# Inspiration from Atomic Habits
+
+This project was inspired by James Clear's "Atomic Habits" and applies several of its core principles to managing your work day:
+
+## 1. Make it Obvious
+- Clear status indicators for different work modes
+- Automated schedule removes decision fatigue
+- Visual cues to team members about your availability
+
+## 2. Make it Attractive
+- Easy-to-use endpoints for quick status changes
+- Seamless transitions between work modes
+- Professional status messages that improve team communication
+
+## 3. Make it Easy
+- Automated status changes require zero effort
+- Quick toggles for common situations (coffee, focus time)
+- Preserve previous status to reduce friction
+- Simple REST endpoints for custom integrations
+
+## 4. Make it Satisfying
+- Consistent daily routine
+- Protected focus time
+- Improved team awareness
+- Better work-life boundaries
+
+The goal is to create "small wins" throughout your day by:
+- Protecting your focus time
+- Communicating clearly with your team
+- Managing interruptions effectively
+- Creating predictable work patterns
+
+Just as Atomic Habits suggests stacking small improvements, this tool helps you build better work habits through automated micro-behaviors that compound over time.
